@@ -3,6 +3,8 @@
     margin: 0;
     padding: 0;
     font-family: "Roboto", sans-serif;
+    text-decoration: none;
+    list-style-type: none;
 }
 
 
@@ -32,6 +34,13 @@ nav a {
     
 }
 
+.nav-container a:hover {
+    transform: scale(1.1);
+    box-shadow: 5px 5px 10px rgb(223, 223, 63);  
+}
+
+
+
 
 .first-container {
     height: 500px;
@@ -47,6 +56,11 @@ nav a {
 .first-container-left {
 min-height: 200px;
 width: 60%;
+}
+
+.title-text a:hover {
+    transform: scale(1.1);
+    box-shadow: 5px 5px 10px rgb(223, 223, 63);
 }
 
 .first-container-right {
@@ -125,20 +139,18 @@ main{
 
 .work-photos img {
     height: 350px;
-    width: 350px;
+    width: 470px;
     transform: scale(1);
     transition: 0.2s all;
 }
 
 .work-photos img:hover {
     transform: scale(1.1);
-    border: yellow;
+    box-shadow: 5px 5px 10px rgb(223, 223, 63);
     
 }
 
-.contact-me  {
-    
-}
+
 
 .img1 {
     flex-grow: 20;
@@ -149,14 +161,67 @@ main{
     position: relative;
     top: 20px;
     bottom: 20px;
-    text-decoration: none;
-    list-style-type: none;
+    
+    
 }
 
 .img1 img {
     width: 100%;
 }
 
+footer {
+    
+    padding: 30px;
+    clear: both;
+    text-align: center;
+    background:rgb(226, 223, 223);
+}
+
+footer h2 {
+    font-size: 20px;
+}
+
+
+@media screen and (max-width: 992px) {
+    .first-container-left {
+       flex-direction: column;
+       flex-shrink:1;
+    }
+    .first-container-right{
+        flex-direction: column;
+        flex-shrink: 2;
+    }
+    nav ul{
+        flex-direction: column; 
+        align-items: center;
+    }
+  }
+  
+  /* Large smartphones - navbar changes color */
+  @media screen and (max-width: 768px) {
+    .first-container-left {
+        flex-direction: column;
+        flex-shrink:2;
+     }
+     .first-container-right{
+         flex-direction: column;
+         flex-shrink: 2;
+     }
+     nav ul{
+         flex-direction: column; 
+         align-items: center;
+     }
+  }
+  
+  /* Small smartphones - image placeholders change color */
+  @media screen and (max-width: 576px) {
+    .first-container {
+       
+      flex-direction: column;
+      
+    }
+  }
+  
 
 
 
