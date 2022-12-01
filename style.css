@@ -10,7 +10,7 @@
 
 
 header {
-    background-image: url(./images/background-image.png);
+    background-image: url(./background-image.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -168,6 +168,20 @@ main{
 .img1 img {
     width: 100%;
 }
+
+.social-links  {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+  }
+
+  .social-links a:hover {
+    transform: scale(1.1);
+    box-shadow: 10px 10px 10px rgb(223, 223, 63); 
+
+  }
+
 
 footer {
     
